@@ -1,0 +1,7 @@
+res://Scenes/main.tscn
+res://Scripts/generation.gd
+res://Scripts/enemies.gd
+res://Scenes/room.tscn
+res://Scenes/player.tscn
+res://Scenes/enemy.tscn
+res://Scenes/heart.tscn

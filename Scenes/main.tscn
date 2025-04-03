@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://ixu4wiu851qf"]
+
+[ext_resource type="PackedScene" uid="uid://pjmlqe40txk0" path="res://Scenes/player.tscn" id="3_68qqd"]
+[ext_resource type="Script" path="res://Scripts/generation.gd" id="3_kjt23"]
+[ext_resource type="Script" path="res://Scripts/enemies.gd" id="5_2lgnf"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Generation" type="Node" parent="."]
+script = ExtResource("3_kjt23")
+enemy_spawn_chance = 0.7
+heart_spawn_chance = 0.3
+max_enemies_per_room = 1
+max_hearts_per_room = 2
+
+[node name="Enemies" type="Node" parent="." groups=["Enemy_Manager"]]
+script = ExtResource("5_2lgnf")
+
+[node name="Player" parent="." instance=ExtResource("3_68qqd")]
