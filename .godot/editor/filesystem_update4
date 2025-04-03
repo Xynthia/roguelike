@@ -1,7 +1,11 @@
 res://Scenes/main.tscn
-res://Scripts/generation.gd
 res://Scripts/enemies.gd
 res://Scenes/room.tscn
 res://Scenes/player.tscn
 res://Scenes/enemy.tscn
 res://Scenes/heart.tscn
+res://Scripts/enemy.gd
+res://Scripts/player.gd
+res://Scripts/room.gd
+res://Scripts/coin.gd
+res://Scenes/coin.tscn

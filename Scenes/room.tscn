@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=4 uid="uid://ly1rl6cnlgso"]
+[gd_scene load_steps=8 format=4 uid="uid://ly1rl6cnlgso"]
 
 [ext_resource type="Script" path="res://Scripts/room.gd" id="1_3t4ox"]
 [ext_resource type="Texture2D" uid="uid://mw41ypdbpfx0" path="res://assets/Spritesheet.png" id="1_n5sai"]
 [ext_resource type="PackedScene" uid="uid://djd82fasga4ai" path="res://Scenes/enemy.tscn" id="2_mg1n7"]
 [ext_resource type="PackedScene" uid="uid://gfp0wc26ao3q" path="res://Scenes/heart.tscn" id="3_85q7l"]
+[ext_resource type="PackedScene" uid="uid://d3enqgq3dlws0" path="res://Scenes/coin.tscn" id="3_oobg5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_anuth"]
 texture = ExtResource("1_n5sai")
@@ -1174,6 +1175,7 @@ sources/0 = SubResource("TileSetAtlasSource_anuth")
 [node name="Room" type="Node2D"]
 script = ExtResource("1_3t4ox")
 enemy_node = ExtResource("2_mg1n7")
+coin_node = ExtResource("3_oobg5")
 heart_node = ExtResource("3_85q7l")
 
 [node name="Base" type="TileMapLayer" parent="." groups=["Wall"]]

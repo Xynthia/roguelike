@@ -18,17 +18,14 @@ func move() -> void:
 		
 		var space_rid = get_world_2d().space
 		var space_state = PhysicsServer2D.space_get_direct_state(space_rid)
-		var query = PhysicsRayQueryParameters2D.create(global_position, global_position + Vector2(64, 64) * direction)
+		var query = PhysicsRayQueryParameters2D.create(global_position, global_position + Vector2(16, 16) * direction)
 		var result = space_state.intersect_ray(query)
 		
-		if not result and position + 6 * direction != player.position:
+		if not result and position + 16 * direction != player.position:
 			can_move = true
 		
-		if result:
-			if result.collider.is_in_group("Wall"):
-				return
 		
-		position += 64 * direction
+	position += 16 * direction
 
 func get_random_direction() -> Vector2:
 	var ran : int = randi_range(0, 3)

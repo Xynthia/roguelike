@@ -9,8 +9,10 @@
 [node name="Generation" type="Node" parent="."]
 script = ExtResource("3_kjt23")
 enemy_spawn_chance = 0.7
+coin_spawn_chance = 0.8
 heart_spawn_chance = 0.3
 max_enemies_per_room = 1
+max_coins_per_room = 3
 max_hearts_per_room = 2
 
 [node name="Enemies" type="Node" parent="." groups=["Enemy_Manager"]]
