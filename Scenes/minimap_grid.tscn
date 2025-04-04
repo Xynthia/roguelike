@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3tkcrpf3xs57"]
+
+[ext_resource type="Script" path="res://Scripts/minimap_grid.gd" id="1_mmei4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b3i3x"]
+bg_color = Color(1, 1, 1, 1)
+
+[node name="minimap_grid" type="Panel"]
+custom_minimum_size = Vector2(5, 5)
+theme_override_styles/panel = SubResource("StyleBoxFlat_b3i3x")
+script = ExtResource("1_mmei4")

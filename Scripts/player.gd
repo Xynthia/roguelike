@@ -2,6 +2,7 @@ class_name Player
 extends CharacterBody2D
 
 signal player_moved
+var has_key : bool = false
 
 func player_input() -> void:
 	if Input.is_action_just_pressed("Down"):

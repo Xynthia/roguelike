@@ -45,6 +45,7 @@ _data = {
 }
 
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
+position = Vector2(144, 80)
 script = ExtResource("1_xlfgf")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

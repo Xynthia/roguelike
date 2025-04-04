@@ -1,0 +1,116 @@
+[gd_scene load_steps=5 format=3 uid="uid://cn0m68ywvoot"]
+
+[ext_resource type="Script" path="res://Scripts/ui.gd" id="1_0wau8"]
+[ext_resource type="Texture2D" uid="uid://mw41ypdbpfx0" path="res://assets/Spritesheet.png" id="2_dnjdl"]
+[ext_resource type="FontFile" uid="uid://dfo1n3wvg5mne" path="res://assets/Kenney Pixel.ttf" id="3_6womn"]
+[ext_resource type="PackedScene" uid="uid://b3tkcrpf3xs57" path="res://Scenes/minimap_grid.tscn" id="4_uata3"]
+
+[node name="UI" type="CanvasLayer"]
+scale = Vector2(4, 4)
+transform = Transform2D(4, 0, 0, 4, 0, 0)
+script = ExtResource("1_0wau8")
+
+[node name="HealthBar" type="Panel" parent="."]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 72.0
+offset_bottom = 24.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Heart1" type="Sprite2D" parent="HealthBar"]
+position = Vector2(8, 8)
+texture = ExtResource("2_dnjdl")
+hframes = 3
+frame = 2
+region_enabled = true
+region_rect = Rect2(679.345, 172.041, 51.4724, 11.916)
+
+[node name="Heart2" type="Sprite2D" parent="HealthBar"]
+position = Vector2(24, 8)
+texture = ExtResource("2_dnjdl")
+hframes = 3
+frame = 2
+region_enabled = true
+region_rect = Rect2(679.345, 172.041, 51.4724, 11.916)
+
+[node name="Heart3" type="Sprite2D" parent="HealthBar"]
+position = Vector2(40, 8)
+texture = ExtResource("2_dnjdl")
+hframes = 3
+frame = 2
+region_enabled = true
+region_rect = Rect2(679.345, 172.041, 51.4724, 11.916)
+
+[node name="Heart4" type="Sprite2D" parent="HealthBar"]
+position = Vector2(56, 8)
+texture = ExtResource("2_dnjdl")
+hframes = 3
+frame = 2
+region_enabled = true
+region_rect = Rect2(679.345, 172.041, 51.4724, 11.916)
+
+[node name="StatBar" type="Panel" parent="."]
+offset_left = 8.0
+offset_top = 24.0
+offset_right = 57.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Coin" type="Sprite2D" parent="StatBar"]
+position = Vector2(8, 8)
+texture = ExtResource("2_dnjdl")
+region_enabled = true
+region_rect = Rect2(379, 73, 6, 6)
+
+[node name="Coins" type="Label" parent="StatBar"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 1.0
+offset_right = 25.0
+offset_bottom = 13.0
+theme_override_fonts/font = ExtResource("3_6womn")
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Key" type="Sprite2D" parent="StatBar"]
+position = Vector2(40, 8)
+texture = ExtResource("2_dnjdl")
+region_enabled = true
+region_rect = Rect2(545, 192, 14, 7)
+
+[node name="MiniMap" type="Panel" parent="."]
+custom_minimum_size = Vector2(50, 50)
+anchors_preset = -1
+anchor_left = 0.187
+anchor_top = 0.16
+anchor_right = 0.243
+anchor_bottom = 0.235
+offset_left = 0.575989
+offset_top = 0.319992
+offset_right = 0.0639954
+offset_bottom = -0.280014
+size_flags_horizontal = 8
+size_flags_vertical = 8
+
+[node name="GridContainer" type="GridContainer" parent="MiniMap"]
+custom_minimum_size = Vector2(50, 35)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = -6.0
+offset_bottom = -7.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 6
+
+[node name="minimap_grid" parent="MiniMap/GridContainer" instance=ExtResource("4_uata3")]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0

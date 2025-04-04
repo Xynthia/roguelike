@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://ixu4wiu851qf"]
+[gd_scene load_steps=5 format=3 uid="uid://ixu4wiu851qf"]
 
 [ext_resource type="PackedScene" uid="uid://pjmlqe40txk0" path="res://Scenes/player.tscn" id="3_68qqd"]
 [ext_resource type="Script" path="res://Scripts/generation.gd" id="3_kjt23"]
+[ext_resource type="PackedScene" uid="uid://cn0m68ywvoot" path="res://Scenes/ui.tscn" id="3_siglb"]
 [ext_resource type="Script" path="res://Scripts/enemies.gd" id="5_2lgnf"]
 
 [node name="Main" type="Node2D"]
@@ -17,5 +18,7 @@ max_hearts_per_room = 2
 
 [node name="Enemies" type="Node" parent="." groups=["Enemy_Manager"]]
 script = ExtResource("5_2lgnf")
+
+[node name="UI" parent="." instance=ExtResource("3_siglb")]
 
 [node name="Player" parent="." instance=ExtResource("3_68qqd")]
