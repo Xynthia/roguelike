@@ -22,3 +22,4 @@ script = ExtResource("5_2lgnf")
 [node name="UI" parent="." instance=ExtResource("3_siglb")]
 
 [node name="Player" parent="." instance=ExtResource("3_68qqd")]
+position = Vector2(608, 352)

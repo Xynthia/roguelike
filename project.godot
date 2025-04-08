@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Roguelike"
-run/main_scene="res://Scenes/main.tscn"
+run/main_scene="res://Scenes/main_menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -19,6 +19,12 @@ config/icon="res://icon.svg"
 
 SignalBus="*res://Scripts/Signal_bus.gd"
 PlayerData="*res://Scripts/player_data.gd"
+Sfx="*res://Scenes/sfx.tscn"
+
+[display]
+
+window/size/viewport_width=1220
+window/size/viewport_height=700
 
 [dotnet]
 

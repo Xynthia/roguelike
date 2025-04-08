@@ -34,6 +34,24 @@ func generate() -> void:
 	
 	# offset for middle of room. use position
 	$"../Player".global_position = (first_room_pos * 272) + Vector2(88, 88)
+	
+
+func calculate_key_and_exit() -> void:
+	var max_dis : float = 0
+	var room_a : Node2D = null
+	var room_b : Node2D = null
+	
+	for a : Node2D in room_nodes:
+		for b : Node2D in room_nodes: 
+			var dis : float = a.position.distance_to(b.position)
+			if dis > max_dis:
+				room_a = a
+				room_b = b
+				max_dis = dis
+	
+	room_a.spawn_node(room_a.key_node)
+	room_b.spawn_node(room_b.exit_door_node)
+	
 
 func check_room(x: int, y: int, remaining: int, general_direction: Vector2, first_room: bool = false) -> void:
 	if room_count >= rooms_to_generate:
@@ -99,4 +117,7 @@ func instantiate_rooms() -> void:
 			
 			$"..".call_deferred("add_child", room)
 			room_nodes.append(room)
+	
+	get_tree().create_timer(1)
+	calculate_key_and_exit()
 	

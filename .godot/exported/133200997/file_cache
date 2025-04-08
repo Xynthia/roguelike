@@ -1,0 +1,13 @@
+res://Scenes/coin.tscn::199c5ccbd236f94bf92aafafed8eee35::1744108100::res://.godot/exported/133200997/export-cfd538a465b9799b811984d89e43d2b9-coin.scn
+res://Scenes/death_menu.tscn::e57a77f4a7c392b92fb4f123d1898866::1744108102::res://.godot/exported/133200997/export-8f150736a5b7dd8ca18a9284a4909c79-death_menu.scn
+res://Scenes/door.tscn::83c871fefbf2fc9750189e24025ee720::1744108483::res://.godot/exported/133200997/export-fe730ee429ab9ada90dbb83893c015e2-door.scn
+res://Scenes/enemy.tscn::8030256c6fa6cd44417ab0183d14958d::1744108101::res://.godot/exported/133200997/export-7111e2a4ba75c4a329f0f9553f2950f2-enemy.scn
+res://Scenes/heart.tscn::bd1d60b835bfa39f06b2022d0680244a::1743674819::res://.godot/exported/133200997/export-3587e56382b2c8a1e4b4e4ba76f3f2de-heart.scn
+res://Scenes/key.tscn::bc1dac2f1d28b592a790f48b76d0c7b8::1744108100::res://.godot/exported/133200997/export-cb731f942f14eebb0aef515c9531ceee-key.scn
+res://Scenes/main.tscn::6dab42f9098c6fb7a5451b32f7bd2da4::1744108100::res://.godot/exported/133200997/export-2ddd04d543d5858e7f20c9299a8b5096-main.scn
+res://Scenes/main_menu.tscn::e147b7a0cfb0d9aaf1f836de0fd7d3a3::1744108101::res://.godot/exported/133200997/export-502e6a9b269597544b234abf28958cd8-main_menu.scn
+res://Scenes/minimap_grid.tscn::3108031fd46eee9c23d3e540bf985943::1744108100::res://.godot/exported/133200997/export-96afe5bffb29e75bdf2bb1b7a9d114d1-minimap_grid.scn
+res://Scenes/player.tscn::84aeaca5fdde28fc3239fdc934461b85::1744108531::res://.godot/exported/133200997/export-1753c997600d68ab5d20ae99fddb15c6-player.scn
+res://Scenes/room.tscn::71fda7d26812f997949d00eedacb857f::1744108101::res://.godot/exported/133200997/export-ffb135435a84c9bf0f1ae03e4efa3477-room.scn
+res://Scenes/sfx.tscn::a88f19f56674d786ad3e1a52e50ce676::1744108101::res://.godot/exported/133200997/export-66106200dc6fa044959824de24bb8fc5-sfx.scn
+res://Scenes/ui.tscn::7e8440e0deb578a261c83de17a2e163e::1744108100::res://.godot/exported/133200997/export-bc7c2c8286022576ab0a03a61017540b-ui.scn

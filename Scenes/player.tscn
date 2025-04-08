@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://pjmlqe40txk0"]
+[gd_scene load_steps=9 format=3 uid="uid://pjmlqe40txk0"]
 
 [ext_resource type="Texture2D" uid="uid://mw41ypdbpfx0" path="res://assets/Spritesheet.png" id="1_xcoa3"]
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_xlfgf"]
 [ext_resource type="Script" path="res://Scripts/player_data.gd" id="3_q76cq"]
+[ext_resource type="AudioStream" uid="uid://b34kfedj64o04" path="res://assets/SFX/walk.wav" id="4_va3x7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5fm1k"]
 size = Vector2(14, 14)
@@ -68,3 +69,6 @@ script = ExtResource("3_q76cq")
 libraries = {
 "": SubResource("AnimationLibrary_8tuur")
 }
+
+[node name="SFX" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_va3x7")

@@ -46,9 +46,13 @@ func take_damage(damage_taken : int) -> void:
 	health -= damage_taken
 	
 	if health <= 0:
+		PlayerData.enemies_defeated += 1
 		queue_free()
 	
 	$AnimationPlayer.play("hit")
+	
+	$SFX.stream = load("res://assets/SFX/Hit.wav")
+	$SFX.play()
 	
 	if randf() > attack_chance:
 		player.take_damage(damage)
